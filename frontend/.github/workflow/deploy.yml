@@ -3,7 +3,7 @@ name: Test Deploy SSH
 on:
   push:
     branches:
-      - Develop/Emi
+      - "Develop/Emi"
 
 jobs:
   deploy:
