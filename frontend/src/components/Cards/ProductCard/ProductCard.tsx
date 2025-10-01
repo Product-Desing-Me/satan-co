@@ -13,7 +13,7 @@ export default function CatalogCard({ product }: ProductCardProps) {
         <GoToDetail id={product.id} title={product.title} description={product?.description || ""} seed={product?.seed || []}>
             <article
                 id={product.id}
-                className="flex flex-col text-align-left items-center text-left mb-4 font-poppins mt-4"
+                className="flex flex-col text-align-left items-center text-left mb-4 font-poppins mt-4 w-full max-w-xs lg:max-w-[375px]"
             >
                 <div className="relative group rounded-3xl overflow-hidden border-2 bg-borderpinkgradient bg-clip-border border-transparent w-fit h-fit flex items-center justify-center">
                 <div className="flex items-center justify-center bg-[#2A1540] rounded-xl

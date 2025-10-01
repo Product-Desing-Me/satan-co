@@ -88,9 +88,7 @@ export default function CatalogComponent() {
                 <section className="lg:col-span-8 sm:cols-span-8 gap-4 col-span-4 justify-right text-4 lg:mt-24 " about="Catalogo de semillas -z-10">
                     <div className={`${isVisible ? "hidden" : ""}`}>
                         <h3 className="font-poppins text-base text-white lg:text-xl font-normal leading-[27px] md:pl-6 lg:pl-0">Catálogo de semillas</h3>
-                        <div className="grid grid-cols-2 lg:mb-36 gap-4 mt-4 mb-4 ">
-
-
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:mb-36 gap-4 mt-4 mb-4 ">
                             {filteredProducts.length > 0
                                 ? filteredProducts.map((product) => (
                                     <div key={product.id}  >

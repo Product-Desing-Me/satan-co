@@ -10,7 +10,7 @@ import {
   Fuegofooter300Pgn,
   FuegofooterCentro,
   FuegofooterDerecha,
-  FuegofooterIzquierda,
+  FuegofooterIzquierda, 
 } from "@/public";
 import Link from "next/link";
 
