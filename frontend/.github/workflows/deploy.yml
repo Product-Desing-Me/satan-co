@@ -1,0 +1,22 @@
+name: Test Deploy SSH
+
+on:
+  push:
+    branches:
+      - "Develop/Emi"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Test SSH connection
+        uses: appleboy/ssh-action@v0.1.10
+        with:
+          host: 147.93.10.91
+          username: root
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            echo "✅ Conexión SSH exitosa desde GitHub Actions"
+            hostname
+            date

@@ -10,7 +10,7 @@ import {
   Fuegofooter300Pgn,
   FuegofooterCentro,
   FuegofooterDerecha,
-  FuegofooterIzquierda,
+  FuegofooterIzquierda, 
 } from "@/public";
 import Link from "next/link";
 
@@ -18,7 +18,7 @@ export default function Footer() {
   return (
     <footer
       role="contentinfo"
-      className="bg-transparent text-white w-full relative lg:h-[478px] h-[294px] items-center text-center justify-center flex transition-all duration-300 font-poppins"
+      className="bg-transparent text-white w-full relative lg:h-[478px] h-[294px] items-center text-center justify-center flex transition-all duration-300 font-poppins mt-80"
     >
       {/* Humos */}
       <div className="flex flex-row justify-between items-end h-full">

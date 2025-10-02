@@ -4,7 +4,6 @@ import {
   HumoInicioDerecha,
   EllipseInicioDerecha,
   EllipseInicioIzquierda,
-  BannerCopaDelMar,
   Testimonio1,
   Testimonio2,
   Testimonio3,
@@ -42,6 +41,27 @@ export default function HomePage() {
     },
   ];
 
+const bannerCardsData = [
+    {
+      imageSrc: "https://res.cloudinary.com/dgdoxyqmu/image/upload/v1759263069/PrimeraSangre_hpyr9t.png",
+      title: "Primera Sangre",
+      link: "https://wa.me/5495837103?text=Hola%20quiero%20más%20info%20sobre%20Primera%20Sangre",
+    },
+      {
+      imageSrc: "https://res.cloudinary.com/dgdoxyqmu/image/upload/v1759265919/FLOWxSATAN_img_nzihqh.jpg",
+      title: "FLOW+SATAN",
+      link: "https://wa.me/5495837103?text=Hola%20quiero%20más%20info%20sobre%20Primera%20Sangre",
+    },
+    {
+      videoSrc: "https://res.cloudinary.com/dgdoxyqmu/video/upload/v1759263069/PrimeraSangreVideo_e8rekw.mp4",
+      title: "Primera Sangre",
+      link: "https://wa.me/5492235837103?text=Hola%20quiero%20más%20info%20sobre%20Primera%20Sangre",
+    },
+  
+  ];
+
+
+
   const testimonyData = [
     {
       image: Testimonio1,
@@ -71,12 +91,21 @@ export default function HomePage() {
 
   return (
     <div className="flex flex-col max-w-[1366px] mx-auto">
-      <div className="w-full lg:h-[579px] h-[255px] lg:pt-32 pt-16 text-center flex justify-center items-center">
-        <Image
-          src={BannerCopaDelMar}
-          alt="BannerCopaDelMar"
-          layout="responsive"
-        />
+      
+        <h1 className="text-[25px] text-[#ff31ff] lg:text-[40px] font-normal font-freckle leading-[60px] text-outline text-center lg:mt-28 lg:mb-4 mt-11 mb-2">
+          Colaboracion especial
+        </h1>
+       <div className="flex lg:flex-row flex-col items-center justify-center gap-6 w-full lg:pt-32 pt-16 mb-8">
+        {bannerCardsData.map((card, index) => (
+          <HomeCard
+            key={index}
+            imageSrc={card.imageSrc}
+            videoSrc={card.videoSrc}
+            isZoomed={index === 1} 
+            title={card.title}
+            link={card.link}
+          />
+        ))}
       </div>
 
       <div className=" ml-4 mr-4 lg:ml-24 lg:mr-24">

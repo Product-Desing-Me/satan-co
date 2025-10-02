@@ -120,21 +120,24 @@ export default function DetailComponent(props: DetailProps) {
                             </section>
                         </div>
                         {/* Product Image */}
-                        <section className="w-[328px] flex-shrink lg:w-[474px] lg:h-[725px] lg:flex flex-col lg:order-1 lg:mr-32 mt-4">
-                            {product[0].image === null ?
-                                <div className="flex items-center justify-center lg:w-[375px] lg:h-[360px] md:w-[275px] md:h-[220px] w-[156px] h-[133px]">
+                        <section className="flex flex-col items-center justify-center w-fit h-fit mt-4">
+                            {product[0].image === null ? (
+                                <div className="flex items-center justify-center bg-[#2A1540] rounded-xl w-fit h-fit">
                                     <Spinner size="100" />
                                 </div>
-                                :
-                                <div className="relative w-[328px] h-[332px] lg:w-[474px] lg:h-[480px]  overflow-hidden">
-                                    <Image
-                                        src={product[0].image || "/default-image.jpg"}
-                                        alt={product[0].title.toString()}
-                                        layout="fill"
-                                        className="object-cover sm:rounded-3xl rounded-xl border-4 border-textColor1 bg-borderpinkgradient bg-clip-border border-transparent"
-                                    />
+                            ) : (
+                                <div className="relative rounded-3xl overflow-hidden border-2 bg-borderpinkgradient bg-clip-border border-transparent w-fit h-fit flex items-center justify-center">
+                                    <div className="flex items-center justify-center bg-[#2A1540] rounded-xl">
+                                        <Image
+                                            src={product[0].image || "/default-image.jpg"}
+                                            alt={product[0].title.toString()}
+                                            width={375}
+                                            height={360}
+                                            className="object-contain rounded-xl"
+                                        />
+                                    </div>
                                 </div>
-                            }
+                            )}
                             <article className="mt-4 lg:mt-8">
                                 <h3 className="text-lg lg:text-xl font-normal lg:leading-6 ">Detalle del producto</h3>
                                 <p className="text-xs lg:text-sm font-light lg:text-base lg:leading-6 leading-5 mt-1 lg:mt-2">{product[0].description}</p>
@@ -175,7 +178,7 @@ export default function DetailComponent(props: DetailProps) {
 
                     <div className="absolute left-[0px] lg:w-[415px] lg:h-[415px] w-[205px] h-[205px] -translate-x-2/2 -translate-y-1/2 rounded-[419px] bg-[rgba(118,0,171,0.4)] blur-[125px] -z-0"></div>
 
-                    <section className="col-span-12 order-8 lg:h-[450px] h-[164px] lg:mt-16 lg:mb-24 mt-8 mb-36 " >
+                    <section className="col-span-12 order-8 lg:h-[450px] h-[164px] lg:mt-16 lg:mb-24 mt-8 mb-24 " >
                         <h2 className="lg:text-4xl text-2xl text-center font-freckle text-textColor1 ">También te puede interesar</h2>
                         <div className="flex justify-center gap-4 mt-5 h-full w-full">
                             {relatedProducts && relatedProducts.map((related, index) => (
