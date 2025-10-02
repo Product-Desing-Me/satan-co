@@ -33,7 +33,7 @@ export default function HomeCard({ imageSrc, videoSrc, title, isZoomed, link }: 
           />
         ) : (
           <Image
-            src={imageSrc as string}
+            src={typeof imageSrc === "string" ? imageSrc : "/fallback.png"}
             alt={title}
             width={328}
             height={213}
