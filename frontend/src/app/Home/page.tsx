@@ -99,7 +99,7 @@ const bannerCardsData = [
         {bannerCardsData.map((card, index) => (
           <HomeCard
             key={index}
-            imageSrc={card.imageSrc}
+            imageSrc={card.imageSrc ?? "/fallback.png"}
             videoSrc={card.videoSrc}
             isZoomed={index === 1} 
             title={card.title}
