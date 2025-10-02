@@ -1,4 +1,5 @@
-import { HomeCard, TestimonyCard, TestimonyCardCarousel } from "@/components";
+import  { TestimonyCard, TestimonyCardCarousel } from "@/components";
+import HomeCard from "@/components/Cards/HomeCard/HomeCard";
 import {
   HumoInicioIzquierda,
   HumoInicioDerecha,
