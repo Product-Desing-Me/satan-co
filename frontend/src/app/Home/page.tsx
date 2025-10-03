@@ -46,12 +46,12 @@ const bannerCardsData = [
     {
       imageSrc: "https://res.cloudinary.com/dgdoxyqmu/image/upload/v1759263069/PrimeraSangre_hpyr9t.png",
       title: "Primera Sangre",
-      link: "https://wa.me/5495837103?text=Hola%20quiero%20más%20info%20sobre%20Primera%20Sangre",
+      link: "https://wa.me/5492235837103?text=Hola%20quiero%20más%20info%20sobre%20Primera%20Sangre",
     },
       {
       imageSrc: "https://res.cloudinary.com/dgdoxyqmu/image/upload/v1759265919/FLOWxSATAN_img_nzihqh.jpg",
       title: "FLOW+SATAN",
-      link: "https://wa.me/5495837103?text=Hola%20quiero%20más%20info%20sobre%20Primera%20Sangre",
+      link: "https://wa.me/5492235837103?text=Hola%20quiero%20más%20info%20sobre%20Primera%20Sangre",
     },
     {
       videoSrc: "https://res.cloudinary.com/dgdoxyqmu/video/upload/v1759263069/PrimeraSangreVideo_e8rekw.mp4",
