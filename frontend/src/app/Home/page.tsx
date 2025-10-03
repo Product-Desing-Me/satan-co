@@ -101,7 +101,7 @@ const bannerCardsData = [
           <HomeCard
             key={index}
             imageSrc={card.imageSrc ?? "/fallback.png"}
-            videoSrc={card.videoSrc}
+            videoSrc={card.videoSrc ?? ""}
             isZoomed={index === 1} 
             title={card.title}
             link={card.link}
