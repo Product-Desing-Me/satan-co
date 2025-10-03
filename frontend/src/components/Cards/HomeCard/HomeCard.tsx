@@ -4,7 +4,7 @@ import Link from "next/link";
 
 interface HomeCardProps {
   imageSrc?: string | StaticImageData;
-  videoSrc?: string;
+  videoSrc?: strin;
   title: string;
   isZoomed?: boolean;
   link: string;
